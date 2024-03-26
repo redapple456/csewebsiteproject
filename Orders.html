@@ -1,0 +1,179 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bake A Cake</title>
+        <link rel="stylesheet" href="styles.css">
+<style>
+  .button {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+body {background-color: #FFf0f3}
+h1   {color: #FC4C4E;}
+h2   {color: #FC4C4E;}
+p    {color: #FC4C4E; font-size: 20px}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+
+button[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ec9f9f90;
+  padding: 20px;
+
+
+  /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+
+  <ul>
+<li><a class="active" href="index.html">Home</a></li>
+  <li><a href="cakes.html">Cakes</a></li>
+  <li><a href="cupcakes.html">Cupcakes</a></li>
+  
+  <li><a href="Orders.html">Order here</a></li>
+  </ul>
+  <hr>
+
+  
+  <h1>Forms</h1> 
+  <hr>
+<body>
+ 
+
+  <p>Fill out this form to place an order!</p> 
+
+
+  <h3>Order Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+     <label for="email">Email</label>
+    <input type="text" id="email" name="Email" placeholder="Your email..">
+
+   
+
+    <label for="ordernumber">Order Number</label>
+    <textarea id="ordernumber" name="Order Number" placeholder="Type the order number of the product you want to buy.." style="height:40px"></textarea>
+
+    
+  </form>
+  <button onclick="myFunction()" type=submit>submit</button>
+</div>
+
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    alert("Thank you, your order has been placed!")
+}
+</script>
+
+<h3>Feedback Form</h3>
+
+<button onclick="window.location.href='https://forms.gle/kGc9BghLw4663oJ49';">
+      Click Here
+    </button>
+
+
+
+
+
+
+
+
+  
+  </body>
+  </html>
